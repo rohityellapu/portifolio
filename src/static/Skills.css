@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,400);
+
+@-webkit-keyframes load {
+    0% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes load {
+    0% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.skills {
+    transform: scale(0);
+    transition: transform 1s;
+    visibility: hidden;
+    padding: 5rem;
+    background-color: #0c1e31dd;
+}
+
+.skills.reveal {
+    transform: scale(1);
+    visibility: visible;
+}
+
+.skills h1 {
+    text-align: center;
+    font-weight: 500;
+}
+.progress {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+}
+
+.progress>li {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: #93A2AC;
+    font-family: Lato;
+    font-weight: 100;
+    margin: 2rem;
+}
+
+.progress>li:before {
+    content: attr(data-name);
+    position: absolute;
+    width: 100%;
+    bottom: -2rem;
+    font-weight: 400;
+}
+
+.progress>li:after {
+    content: attr(data-percent);
+    position: absolute;
+    width: 100%;
+    top: 3.7rem;
+    left: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.progress svg {
+    width: 10rem;
+    height: 10rem;
+}
+
+.progress svg:nth-child(2) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(-90deg);
+}
+
+.progress svg:nth-child(2) path {
+    fill: none;
+    stroke-width: 25;
+    stroke-dasharray: 629;
+    stroke: #1b2025dd;
+    opacity: 0.9;
+    -webkit-animation: load 10s;
+    animation: load 10s;
+}
