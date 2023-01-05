@@ -1,0 +1,53 @@
+.projects .project:nth-child(odd) {
+    flex-direction: row;
+}
+
+.projects .project:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.project .image {
+    
+    background-repeat: no-repeat;
+    background-size:100%;
+    width: 55%;
+    height: 15rem;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.project .image.hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+.project {
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.image img {
+    height: 20em;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.project .about p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.project .image img {
+    height: 90%;
+    width: 90%;
+    border: none;
+}
+
+.project .image div:hover {
+    transform: scale(1.1);
+    color: aqua;
+    filter: saturate(5.5);
+}
+.project .image .icons {
+
+    padding: auto;
+    height: 60%;
+    width: 25%;
+}
