@@ -1,24 +1,25 @@
-import React, {useRef, useEffect} from 'react'
+import React, { useEffect, useState} from 'react'
 import '../static/Skills.css'
 import Skill from './Skill'
 function Skills() {
-    const boxRef = useRef(null);
+
+    const [isScrolled, setIsScrolled] = useState(false);
+
     useEffect(() => {
-        const box = boxRef.current;
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('reveal');
-                }
-            });
-        });
-        observer.observe(box);
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 50);
+           
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
     }, []);
   return (
-      <div ref={boxRef} className='skills'>
+      <div id='skills' className="skills">
           <h1>Technologies I use currently or used previosly</h1>
        
-          <ul class="progress">
+          <ul class={ `box progress ${isScrolled ? 'show' : ''}` }>
               { skills.map(skill => {
                   return <Skill name={skill.name } percent={skill.percent} />
               })}

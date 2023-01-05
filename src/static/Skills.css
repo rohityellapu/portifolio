@@ -11,19 +11,17 @@
         stroke-dashoffset: 0;
     }
 }
-
-.skills {
-    transform: scale(0);
-    transition: transform 1s;
-    visibility: hidden;
-    padding: 5rem;
-    background-color: #0c1e31dd;
+@keyframes fade-in {
+    from {
+        display: none;
+    }
+    to {
+        display: inline-block;
+    }
 }
 
-.skills.reveal {
-    transform: scale(1);
-    visibility: visible;
-}
+
+
 
 .skills h1 {
     text-align: center;
@@ -84,4 +82,14 @@
     opacity: 0.9;
     -webkit-animation: load 10s;
     animation: load 10s;
+}
+.box {
+    display: none;
+    opacity: 0;
+}
+
+.box.show {
+    display: inline-block;
+    opacity: 1;
+    animation: fade-in 2s;
 }
