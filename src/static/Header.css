@@ -1,0 +1,16 @@
+header {
+    width: 100vw;
+}
+
+.nav-links {
+    float: right;
+    padding-right: 2rem;
+
+}
+
+.nav-links li {
+    margin: 2rem;
+    display: inline;
+    font-weight: 600;
+    font-size: large;
+}
