@@ -11,7 +11,7 @@ footer .contact img:hover {
 }
 
 footer {
-    width: 80vw;
+    padding: 3rem;
 }
 
 footer div {
@@ -32,12 +32,10 @@ footer div {
 footer form div {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
-footer .form {
-    width: 50%;
-}
+
 
 
 footer input[type='submit'] {
@@ -54,4 +52,13 @@ footer input[type='submit']:hover {
     color: rgb(117, 150, 234);
     transform: scale(1.05);
     cursor: pointer;
+}
+.footer {
+    position: relative;
+    top: 10rem;
+}
+@media screen and (max-width: 400px) {
+    .form-contact {
+        flex-direction: column;
+    }
 }
