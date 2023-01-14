@@ -14,10 +14,11 @@ function Header() {
             <img src={ require('../images/logo.png') } height='120rem' width='120rem' alt="ry" />
           </div>
           <ul className='nav-links flex flex-row'>
-            <li><a href="" onClick={ handleClick }>About</a></li>
-            <li> <a href="#skills" onClick={ handleClick }>Skills</a></li>
-            <li><a href="#contact" onClick={ handleClick }>Projects</a></li>
-            <li><a href="#contacts" onClick={ handleClick }>Contact</a></li>
+            <li><a className='nav-link' href="" onClick={ handleClick }>About</a></li>
+            <li> <a className='nav-link' href="#skills" onClick={ handleClick }>Skills</a></li>
+            <li><a className='nav-link' href="#project" onClick={ handleClick }>Projects</a></li>
+            <li><a className='nav-link' href="#contact" onClick={ handleClick }>Contact</a></li>
+            <li><a className='resume' target='_blank' href={require('../images/resume.pdf')} download="rohits-resume">Resume</a></li>
           </ul></nav>
       </header>
     </>

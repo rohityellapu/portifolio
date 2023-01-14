@@ -23,3 +23,24 @@ a {
     color: inherit;
 
 }
+
+.resume {
+    background-color: #F2AA4CFF;
+    color:#101820FF ;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #F2AA4CFF;
+    border-radius: 1rem;
+}
+.resume:hover {
+    background-color: #101820FF;
+    color: #F2AA4CFF;
+    transform: scale(1.1);
+}
+
+.nav-link {
+    transition: all 1s ease-in-out;
+}
+.nav-link:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
