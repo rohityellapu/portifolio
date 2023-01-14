@@ -1,19 +1,19 @@
-.projects .project:nth-child(odd) {
+.project:nth-child(odd) {
     flex-direction: row;
 }
 
-.projects .project:nth-child(even) {
+.project:nth-child(even) {
     flex-direction: row-reverse;
 }
 
 .project .image {
     
     background-repeat: no-repeat;
-    background-size:100%;
-    width: 55%;
-    height: 15rem;
-    border: 1px solid black;
-    border-radius: 5px;
+    background-size:cover;
+    width: 35rem;
+    height: 20rem;
+
+    border-radius: 1rem;
 }
 .project .image.hover {
     opacity: 0.6;
@@ -24,15 +24,14 @@
     padding: 2rem;
 }
 
-.image img {
-    height: 20em;
-    border: 1px solid black;
-    border-radius: 5px;
-}
 
 .project .about p {
     padding-left: 2rem;
     padding-right: 2rem;
+
+}
+.project .about {
+    width: 50%;
 }
 .project .image img {
     height: 90%;
@@ -46,8 +45,12 @@
     filter: saturate(5.5);
 }
 .project .image .icons {
-
     padding: auto;
     height: 60%;
     width: 25%;
+}
+@media screen and (max-width: 400px) {
+    .projects .project {
+        flex-direction: column;
+    }
 }
