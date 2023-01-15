@@ -36,8 +36,8 @@ function Footer() {
     }
     return (
         <>
-            <footer className='footer flex flex-column items-center'>
-                <div id='contact' className="form-contact flex flex-row space-between">
+            <footer id='contact' className='footer flex flex-column items-center'>
+                <div  className="form-contact flex flex-row space-between">
                     <div className="connect flex flex-column items-center">
 
                         <h2 className='text-center'>Connect with me...</h2>
@@ -63,7 +63,7 @@ function Footer() {
                             </div>
                             <div className="message">
 
-                                <label htmlFor="message">Message: </label>
+                                <label htmlFor="message">Note: </label>
                                 <textarea className='input' name="message" id="message" cols="30" rows="4" onChange={ handleChange } value={ formData.message } placeholder='Message'></textarea>
                             </div>
                             <div className="submit flex items-center flex-column">
