@@ -4,7 +4,7 @@ import '../static/Projects.css'
 function Projects() {
   return (
       <>
-          <h1 className='text-center'>Projects I worked on...</h1>
+          <h1 style={ { fontSize: '3rem' } } className='text-center'>Projects I worked on...</h1>
           <div id="project" className="flex flex-column projects">
               { projects.map(project => (
                   <Project
