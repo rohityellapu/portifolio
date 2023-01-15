@@ -10,7 +10,7 @@ function Links() {
     const handleClick = (event) => {
         event.preventDefault();
         event.stopPropagation();
-        console.log(event.target)
+
         const element = document.getElementById(event.target.getAttribute('href').substring(1));
 
         element.scrollIntoView({ behavior: 'smooth', block: 'start' });
