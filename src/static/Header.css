@@ -18,6 +18,7 @@ header {
 .logo {
     margin-left: 2rem;
 }
+
 a {
     text-decoration: none;
     color: inherit;
@@ -26,11 +27,12 @@ a {
 
 .resume {
     background-color: #F2AA4CFF;
-    color:#101820FF ;
+    color: #101820FF;
     padding: 0.5rem 0.8rem;
     border: 1px solid #F2AA4CFF;
     border-radius: 1rem;
 }
+
 .resume:hover {
     background-color: #101820FF;
     color: #F2AA4CFF;
@@ -40,7 +42,39 @@ a {
 .nav-link {
     transition: all 1s ease-in-out;
 }
+
 .nav-link:hover {
     transform: scale(1.1);
     text-decoration: underline;
+}
+
+.goUp {
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+    z-index: 2000;
+}
+
+.goUp:hover {
+    transform: scale(1.1);
+}
+
+.aside-links {
+    padding-left: 0;
+    position: fixed;
+    bottom: 0;
+
+    left: 1rem;
+    list-style: none;
+    z-index: 2000;
+}
+
+.aside-links li {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin: 1rem;
+}
+
+.aside-links li:hover {
+    transform: scale(1.1);
 }
