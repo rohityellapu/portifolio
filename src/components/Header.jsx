@@ -1,7 +1,5 @@
 import React, {useState} from 'react'
 import '../static/Header.css';
-import { FormControlLabel } from '@mui/material';
-import MaterialUISwitch from './Switch'
 import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
 import Links from './Links';
 function Header() {
