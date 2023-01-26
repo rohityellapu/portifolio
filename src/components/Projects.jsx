@@ -1,24 +1,28 @@
 import React from 'react'
 import Project from './Project'
-import '../static/Projects.css'
+
 function Projects() {
-  return (
-      <>
-          <h1 style={ { fontSize: '3rem' } } className='text-center'>Projects I worked on...</h1>
-          <div id="project" className="flex flex-column projects">
-              { projects.map(project => (
-                  <Project
-                      key={project.name}
-                      name={ project.name }
-                      desc={ project.description }
-                      image={ project.imageUrl }
-                      link={ project.liveLink }
-                      git={project.gitHubLink}
-                  />
-              ))}
-          </div>
-      </>
-  )
+    return (
+        <>
+            <div className="proj mt-4 w-full text-center">
+                <h1 className='lg:text-5xl text-3xl font-bold p-4 m-4 my-16'>Projects I worked on</h1>
+                <div id="project" className="flex flex-col projects gap-4">
+                    { projects.map((project, i) => (
+                        <Project
+                            id={ i + 1 }
+                            key={ project.name }
+                            name={ project.name }
+                            desc={ project.description }
+                            image={ project.imageUrl }
+                            link={ project.liveLink }
+                            git={ project.gitHubLink }
+                        />
+                    )) }
+                </div>
+            </div>
+
+        </>
+    )
 }
 
 const projects = [
