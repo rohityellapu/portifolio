@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
-import HomeIcon from '@mui/icons-material/Home';
-import AccountTreeRoundedIcon from '@mui/icons-material/AccountTreeRounded';
-import IntegrationInstructionsSharpIcon from '@mui/icons-material/IntegrationInstructionsSharp';
-import AccountCircleSharpIcon from '@mui/icons-material/AccountCircleSharp';
-import ForumSharpIcon from '@mui/icons-material/ForumSharp';
+import { HiOutlineHome, HiChatAlt2 } from 'react-icons/hi'
+import { FaUserGraduate, FaProjectDiagram } from 'react-icons/fa'
+import { AiOutlineCode } from 'react-icons/ai'
+
 function Links() {
     let [arrowOp, setOp] = useState(0)
     window.addEventListener('scroll', () => setOp(window.scrollY / 550))
@@ -16,17 +15,18 @@ function Links() {
         element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     };
     return (
-        <>
-            <ul className='aside-links' style={ {
-                opacity: `${arrowOp}`, color: 'aqua',
-                borderLeft: '0.3rem solid aqua'
-            } }>
-                <li><a className='nav-link' href="#head" onClick={ handleClick }><HomeIcon href="#head"  /></a></li>
-                <li><a className='nav-link' href="#about" onClick={ handleClick }><AccountCircleSharpIcon href="#about"  /></a></li>
-                <li><a className='nav-link' href="#skills" onClick={ handleClick }><IntegrationInstructionsSharpIcon href="#skills"  /></a></li>
-                <li><a className='nav-link' href="#project" onClick={ handleClick }><AccountTreeRoundedIcon href="#project"  /></a></li>
-                <li><a className='nav-link' href="#contact" onClick={ handleClick }><ForumSharpIcon href="#contact"  /></a></li>
+        <><div className="links fixed bottom-5 lg:bottom-10 z-50 flex justify-center w-full text-[#f2fc3e]" style={ {
+            opacity: `${arrowOp}`
+        } }>
+
+            <ul className='aside-links flex flex-row justify-center shadow-md shadow-amber-300 gap-4 bg-[#241304ba] p-2 px-4 rounded-full' >
+                <li><a className='nav-link rounded-full hover:scale-125 hover:text-black' href="#head"><HiOutlineHome className="h-10 w-10" href="#head" onClick={ handleClick } /></a></li>
+                <li><a className='nav-link rounded-full hover:scale-125 hover:text-black' href="#about"><FaUserGraduate className="h-10 w-10" href="#about" onClick={ handleClick } /></a></li>
+                <li><a className='nav-link rounded-full hover:scale-125 hover:text-black' href="#skills"><AiOutlineCode className="h-10 w-10" href="#skills" onClick={ handleClick } /></a></li>
+                <li><a className='nav-link rounded-full hover:scale-125 hover:text-black' href="#project"><FaProjectDiagram className="h-10 w-10" href="#project" onClick={ handleClick } /></a></li>
+                <li><a className='nav-link rounded-full hover:scale-125 hover:text-black' href="#contacts"><HiChatAlt2 className="h-10 w-10" href="#contact" onClick={ handleClick } /></a></li>
             </ul>
+        </div>
 
         </>
     )
