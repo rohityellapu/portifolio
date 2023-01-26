@@ -8,7 +8,7 @@ function Skills() {
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 50);
-            
+
         };
         window.addEventListener('scroll', handleScroll);
         return () => {
@@ -17,9 +17,9 @@ function Skills() {
     }, []);
     return (
         <div id='skills' className="skills">
-            <h1 style={ { fontSize: '3rem' } }>Technologies I use currently or used previosly</h1>
+            <h1 className='text-3xl lg:text-5xl text-center mb-4 lg:mb-10'>Technologies I use currently or used previosly</h1>
 
-            <ul className={ `box progress ${isScrolled ? 'show' : ''}` }>
+            <ul className={ `flex flex-wrap p-4 gap-4 box progress ${isScrolled ? 'show' : ''}` }>
                 { skills.map(skill => {
                     return <Skill key={ skill.name } name={ skill.name } percent={ skill.percent } />
                 }) }
