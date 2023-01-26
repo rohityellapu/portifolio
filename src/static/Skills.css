@@ -11,10 +11,12 @@
         stroke-dashoffset: 0;
     }
 }
+
 @keyframes fade-in {
     from {
         display: none;
     }
+
     to {
         display: inline-block;
     }
@@ -27,6 +29,7 @@
     text-align: center;
     font-weight: 500;
 }
+
 .progress {
     position: relative;
     display: inline-block;
@@ -41,7 +44,7 @@
     color: #93A2AC;
     font-family: Lato;
     font-weight: 100;
-    margin: 2rem;
+
 }
 
 .progress>li:before {
@@ -49,6 +52,7 @@
     position: absolute;
     width: 100%;
     bottom: -2rem;
+    left: 0;
     font-weight: 400;
 }
 
@@ -56,16 +60,12 @@
     content: attr(data-percent);
     position: absolute;
     width: 100%;
-    top: 3.7rem;
+    top: 40%;
     left: 0;
-    font-size: 2rem;
     text-align: center;
 }
 
-.progress svg {
-    width: 10rem;
-    height: 10rem;
-}
+
 
 .progress svg:nth-child(2) {
     position: absolute;
@@ -83,6 +83,7 @@
     -webkit-animation: load 10s;
     animation: load 10s;
 }
+
 .box {
     display: none;
     opacity: 0;
@@ -93,4 +94,3 @@
     opacity: 1;
     animation: fade-in 2s;
 }
-

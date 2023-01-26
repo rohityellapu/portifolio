@@ -23,9 +23,9 @@ function Positions() {
 
         setInterval(display, 300)
     }, [])
-  return (
-      <p style={ { fontSize: '2rem' } } id="text">{ text }</p>
-  )
+    return (
+        <p className='text-xl lg:text-3xl saturate-150' id="text">{ text }</p>
+    )
 }
 
 export default Positions
