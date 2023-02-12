@@ -3,7 +3,6 @@ import React from 'react'
 import Links from './Links';
 function Header() {
 
-  window.addEventListener('scroll', () => setOp(window.scrollY / 550))
   const handleClick = (event) => {
     event.preventDefault();
     const element = document.getElementById(event.target.getAttribute('href').substring(1));
