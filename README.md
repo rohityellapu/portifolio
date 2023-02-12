@@ -17,7 +17,7 @@ This repo contains the source code for Event Managing demo app [portfolio](https
 
 ## Features
 
-
+* Fully mobile and tab responsive page built with awesome tailwind aesthetics.
 * See all about my profile, my story, skills and technologies I use, projects I have worked on.
 * Get my resume/CV in a single click.
 * Connect with me by providing your name and email with a message/idea you have in your mind. * * Lets build the next future app.
