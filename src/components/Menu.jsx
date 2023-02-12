@@ -6,7 +6,6 @@ function Menu() {
         e.target.classList.toggle('active');
         menu.current.classList.toggle('active');
     }
-    window.addEventListener('scroll', () => setOp(window.scrollY / 550))
     const handleClick = (event) => {
         event.preventDefault();
         const element = document.getElementById(event.target.getAttribute('href').substring(1));
