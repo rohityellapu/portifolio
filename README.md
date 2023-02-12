@@ -1,7 +1,7 @@
 
-# Event Manager
+# Rohit's Portfolio
 
-This repo contains the source code for Event Managing demo app [portfolio](https://rohityellapu-portifolio.vercel.app).
+This repo contains the source code for Portfolio website [portfolio](https://rohityellapu-portifolio.vercel.app).
 
 ## Table of Content
 
