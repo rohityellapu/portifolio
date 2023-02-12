@@ -18,11 +18,11 @@ function Links() {
         } }>
 
             <ul className='aside-links flex flex-row justify-center shadow-md shadow-amber-300 gap-4 bg-[#241304ba] p-2 px-4 rounded-full' >
-                <li><a className='nav-link rounded-full hover:scale-125 hover:text-black' href="#head" onClick={ handleClick }><HiOutlineHome className="h-10 w-10" href="#head" /></a></li>
-                <li><a className='nav-link rounded-full hover:scale-125 hover:text-black' href="#about" onClick={ handleClick }><FaUserGraduate className="h-10 w-10" href="#about" /></a></li>
-                <li><a className='nav-link rounded-full hover:scale-125 hover:text-black' href="#skills" onClick={ handleClick }><AiOutlineCode className="h-10 w-10" href="#skills" /></a></li>
-                <li><a className='nav-link rounded-full hover:scale-125 hover:text-black' href="#project" onClick={ handleClick }><FaProjectDiagram className="h-10 w-10" href="#project" /></a></li>
-                <li><a className='nav-link rounded-full hover:scale-125 hover:text-black' href="#contacts" onClick={ handleClick }><HiChatAlt2 className="h-10 w-10" href="#contact" /></a></li>
+                <li><a className='nav-link rounded-full hover:scale-125 hover:text-black' href="#head" onClick={ handleClick }><div> <HiOutlineHome className="h-10 w-10" href="#head" /></div></a></li>
+                <li><a className='nav-link rounded-full hover:scale-125 hover:text-black' href="#about" onClick={ handleClick }><div> <FaUserGraduate className="h-10 w-10" href="#about" /></div></a></li>
+                <li><a className='nav-link rounded-full hover:scale-125 hover:text-black' href="#skills" onClick={ handleClick }><div> <AiOutlineCode className="h-10 w-10" href="#skills" /></div></a></li>
+                <li><a className='nav-link rounded-full hover:scale-125 hover:text-black' href="#project" onClick={ handleClick }><div> <FaProjectDiagram className="h-10 w-10" href="#project" /></div></a></li>
+                <li><a className='nav-link rounded-full hover:scale-125 hover:text-black' href="#contacts" onClick={ handleClick }><div> <HiChatAlt2 className="h-10 w-10" href="#contact" /></div></a></li>
             </ul>
         </div>
 
