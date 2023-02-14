@@ -5,7 +5,7 @@ function Intro() {
 
     return (
         <>
-            <main className='flex justify-center lg:mx-24 mt-8'>
+            <main id='head' className='flex justify-center lg:mx-24 mt-8'>
                 <div className="bg-[#1b2025dd] m-4 rounded-2xl lg:p-24 p-4 pb-12 flex lg:flex-row lg:w-full flex-col items-center justify-between">
                     <section className="text flex flex-col justify-around lg:h-full">
                         <p className='my-2 '>Hi, I'm </p>
