@@ -12,7 +12,7 @@ function Header() {
     <>
       <Links />
 
-      <header id='head' className='hidden lg:block'>
+      <header className='hidden lg:block'>
         <nav className='flex lg:flex-row justify-between flex-col'>
           <div className="logo ">
             <img className='hover:cursor-pointer' src={ require('../images/logo.png') } height='120rem' width='120rem' alt="ry" />
